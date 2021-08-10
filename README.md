@@ -11,7 +11,7 @@ A website that offers fitness training services.
 
 ## Website
 
-https://somdobomk.github.io/run-buddy/
+https://somdobomk.github.io/RunBuddy/
 
 ## Contribution
 
