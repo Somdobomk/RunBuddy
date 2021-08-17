@@ -8,7 +8,7 @@
 		<title>Run Buddy</title>
 	</head>
 	<body>
-		<!-- navigation -->
+		<!-- Start Navigation -->
 		<header>
 			<h1>
 				<a href="/">RUN BUDDY</a>
@@ -22,6 +22,7 @@
 				</ul>
 			</nav>
 		</header>
+		<!-- End Navigation -->
 
 		<!-- hero -->
 		<section class="hero">
@@ -42,75 +43,79 @@
 			<div class="hero-form">
 				<h3>Get Started Today</h3>
 				<p>
-					Fill out this form and one of our trainers will schedule a consult
+					Fill out this form and one of our trainers will schedule a consult.
 				</p>
-
-				<!-- Add form element -->
 				<form>
 					<label for="name">Enter full name:</label>
 					<input
 						type="text"
 						placeholder="Your Name"
-						name="name"
 						id="name"
+						name="name"
 						class="form-input"
 					/>
-
 					<label for="email">Enter email address:</label>
 					<input
-						type="text"
+						type="email"
 						placeholder="Email Address"
-						name="email"
 						id="email"
+						name="email"
 						class="form-input"
 					/>
-
 					<label for="phone">Enter a telephone number:</label>
 					<input
-						type="text"
+						type="tel"
 						placeholder="Phone Number"
 						name="phone"
 						id="phone"
 						class="form-input"
 					/>
-
 					<p>
-						Have You worked out with a trainer before?
+						Have you worked out with a trainer before?
 						<input type="radio" name="trainer-confirm" id="trainer-yes" />
 						<label for="trainer-yes">Yes</label>
 						<input type="radio" name="trainer-confirm" id="trainer-no" />
 						<label for="trainer-no">No</label>
 					</p>
-
 					<p>
 						<label for="checkbox">
 							I acknowledge that I am at least 18 years of age.
 						</label>
-						<input type="checkbox" name="age-confirm" id="checkbox" />
+						<input type="checkbox" name="checkpoint1" id="checkbox" />
 					</p>
 					<button type="submit">Get running!</button>
 				</form>
 			</div>
 		</section>
+		<!-- End Header -->
 
 		<!-- "what we do" section -->
 		<section id="what-we-do" class="intro">
 			<h2 class="section-title primary-border">What We Do</h2>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-				cumque provident cupiditate autem ipsa magni dolorem ratione in dolor
-				soluta?
-			</p>
+			<div class="flex-row">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+					cumque provident cupiditate autem ipsa magni dolorem ratione in dolor
+					soluta?
+				</p>
+			</div>
 		</section>
 
 		<!-- "what you do" section -->
 		<section id="what-you-do" class="steps">
 			<h2 class="section-title secondary-border">What You Do</h2>
 
-			<div>
-				<img src="./assets/images/step-1.svg" alt="" />
-				<h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-				<p>You're already here, so why not?</p>
+			<div class="step">
+				<h3>Step 1.</h3>
+				<div class="step-info">
+					<div class="step-img">
+						<img src="./assets/images/step-1.svg" alt="" />
+					</div>
+					<div class="step-text">
+						<h4>Fill Out The Form Above</h4>
+						<p>You're already here, so why not?</p>
+					</div>
+				</div>
 			</div>
 
 			<div>
@@ -149,12 +154,14 @@
 			<div class="trainer-bio text-left">
 				<h3>Arron Stephens</h3>
 				<h4>Speed / Strength</h4>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque
-					animi quo cupiditate commodi saepe culpa sed itaque velit maiores
-					optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet
-					quis repellat!
-				</p>
+				<div class="flex-row">
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+						neque animi quo cupiditate commodi saepe culpa sed itaque velit
+						maiores optio dolorem excepturi aperiam dolores, voluptatibus
+						suscipit amet quis repellat!
+					</p>
+				</div>
 			</div>
 		</article>
 
@@ -163,12 +170,14 @@
 			<div class="trainer-bio text-right">
 				<h3>Joanna Gill</h3>
 				<h4>Endurance</h4>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque
-					animi quo cupiditate commodi saepe culpa sed itaque velit maiores
-					optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet
-					quis repellat!
-				</p>
+				<div class="flex-row">
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+						neque animi quo cupiditate commodi saepe culpa sed itaque velit
+						maiores optio dolorem excepturi aperiam dolores, voluptatibus
+						suscipit amet quis repellat!
+					</p>
+				</div>
 			</div>
 			<img
 				src="./assets/images/trainer-2.jpg"
@@ -185,12 +194,14 @@
 			<div class="trainer-bio text-left">
 				<h3>Harry "the Headband" Smith</h3>
 				<h4>Strength</h4>
-				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque
-					animi quo cupiditate commodi saepe culpa sed itaque velit maiores
-					optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet
-					quis repellat!
-				</p>
+				<div class="flex-row">
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi
+						neque animi quo cupiditate commodi saepe culpa sed itaque velit
+						maiores optio dolorem excepturi aperiam dolores, voluptatibus
+						suscipit amet quis repellat!
+					</p>
+				</div>
 			</div>
 		</article>
 
@@ -223,11 +234,13 @@
 
 				<div>
 					<h3>Run Buddy</h3>
-					<p>
-						Any questions or concerns before signing up?
-						<br />
-						Let us know and we'll be happy to talk to you!
-					</p>
+					<div class="flex-row">
+						<p>
+							Any questions or concerns before signing up?
+							<br />
+							Let us know and we'll be happy to talk to you!
+						</p>
+					</div>
 					<address>
 						55 Main Street <br />
 						Some Town, Ca <br />
@@ -241,7 +254,9 @@
 
 		<!-- footer -->
 		<footer>
-			<h2>❤️ Made with love by Run Buddy.</h2>
+			<h2 class="section-title primary-border">
+				❤️ Made with love by Run Buddy.
+			</h2>
 
 			<div>
 				<a href="./privacy-policy.html"> Read Our Privacy Policy</a><br />
